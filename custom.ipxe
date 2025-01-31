@@ -3,10 +3,21 @@
 ### netboot.xyz-custom menu
 ###
 
-:start
-echo Hello world!
-sleep 10
+:custom
+clear custom_choice
+menu kai's utils
+item --gap Windows stuff
+item option_one ${space} Load PEUtils
+choose custom_choice || goto custom_exit
+echo ${cls}
+goto ${custom_choice}
 goto custom_exit
 
+:option_one
+kernel https://boot.netboot.xyz/memdisk raw iso
+initrd https://raw.githubusercontent.com/VastraKai/netboot.xyz-custom/refs/heads/master/PEUtils.iso
+boot || goto custom_exit
+
 :custom_exit
-exit 0
+chain utils.ipxe
+exit
