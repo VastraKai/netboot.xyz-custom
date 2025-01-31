@@ -15,7 +15,7 @@ goto custom_exit
 
 :option_one
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd https://github.com/VastraKai/netboot.xyz-custom/releases/download/PEUtils/PEUtils.iso
+initrd http://10.1.0.60/storage/PEUtils.iso
 boot || goto custom_exit
 
 :custom_exit
