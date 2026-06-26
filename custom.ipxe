@@ -15,7 +15,7 @@ goto custom_exit
 
 :option_one
 kernel https://boot.netboot.xyz/wimboot
-initrd https://ratted.systems/upload/cn34Ih5N         bootmgr
+initrd https://ratted.systems/upload/agVPFQXh.efi     bootmgfw.efi
 initrd https://ratted.systems/upload/sjfJ3QQQ         BCD
 initrd https://ratted.systems/upload/kJdAsWe3.sdi     boot.sdi
 initrd https://ratted.systems/upload/9HSNHxJm.wim     boot.wim
