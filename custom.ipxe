@@ -14,7 +14,7 @@ goto ${custom_choice}
 goto custom_exit
 
 :option_one
-kernel https://boot.netboot.xyz/wimboot
+kernel https://ratted.systems/upload/tAoqltjT
 initrd https://ratted.systems/upload/agVPFQXh.efi     bootmgfw.efi
 initrd https://ratted.systems/upload/OMvHIeou         BCD
 initrd https://ratted.systems/upload/kJdAsWe3.sdi     boot.sdi
